@@ -1,0 +1,19 @@
+.about{
+    
+    font-size: 25px;
+}
+
+.img{
+    width: 600px;
+    height: 600px;
+    border-radius: 300px;
+}
+
+.footer{
+    justify-content: space-around;
+    background-color: black;
+    display: flex;
+    opacity: 0.4;
+    color: aliceblue;
+}
+

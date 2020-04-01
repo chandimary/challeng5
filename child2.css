@@ -1,0 +1,12 @@
+.col-md-8{
+    margin-top: 150px;
+    margin-left: 20px;
+}
+.parent{
+    display: flex;
+    background: space;
+    
+}
+nav{
+    margin-right: 80px;
+}

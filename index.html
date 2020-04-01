@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>EDU BUYING ONLINE</title>
+  <!-- <link rel="stylesheet" href="login.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/script.js"></script>
+
+
+
+<!-- 
+  <style>
+    .balls{
+      border-radius: 50%;
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      margin-top: 50px;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+    #red {
+      background: red;
+      left: 27%;
+      animation-timing-function: cubic-bezier(0,0,0.58,1);
+    }
+    #blue {
+      background: blue;
+      left: 56%;
+      animation-timing-function: ease-out;
+    }
+    @keyframes bounce {
+      0% {
+        top: 0px;
+      }
+      100% {
+        top: 249px;
+      }
+    }
+  </style> -->
+ 
+
+  <style>
+    #button1 {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 30px;
+
+    }
+
+    .ship {
+      display: flex;
+      justify-content: space-around;
+      /* background-color: aqua; */
+    }
+
+    .footer {
+      /* justify-content: space-around;*/
+        display: flex; 
+      background-color: rgb(128, 118, 118);
+    }
+
+    .child1 {
+      display: flex;
+    }
+
+    h4 {
+      font-size: 25px;
+      font-family: monospace;
+
+    }
+
+    #buttons {
+      justify-content: space-around;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 50px;
+    }
+
+    .one {
+      /* background-color: blue; */
+
+      margin-top: 0px;
+      justify-content: space-around;
+    }
+
+   
+
+    /* making the background starts */
+
+    
+  </style> 
+
+
+</head>
+
+<body>
+
+
+
+  <div id="back"></div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Shipping Prices
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="oder.html">Order Now</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <li class="nav-item active">
+          <div class="btn-group">
+            <!-- <button type="button" class="btn btn-danger"></button> -->
+            <button type="button" class="btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <!-- <span class="sr-only"> -->
+              <select>
+                <span type="select" class="">
+
+                  <option value="date">Categories</option>
+                  <option value="date">Laptops</option>
+                  <option value="date">Phones</option>
+                  <option value="date">Watches</option>
+                  <option value="date">Bags</option>
+                  <option value="date">Shoes</option>
+                  <option value="date">Televisions</option>
+                  <option value="date">Books</option>
+                  <option value="date">Clothes</option>
+
+
+                </span>
+              </select>
+
+              <!-- </span> -->
+            </button>
+
+        </li>
+        <!-- <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a> -->
+        </div>
+    </div>
+
+
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> 
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="revealMessage()">Search</button>
+    </form>
+    </div>
+
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 id="hiddenMessage" style="display: none">Sorry the app is still being worked on</h1>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="ship">
+          <h2>Ship with us! Register first</h2>
+
+          <button id="button1" class="" item-width="100px">
+            <a href="signup.html">Click here to creat an account</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <button id="" class="form-control" item-width=""> <a href="signup.html"><i class="fa-info-thumbs Sign-Up">Order Now</i></a></button>
+        </div>
+    </div>
+
+</div> -->
+
+ 
+
+  <div class="container">
+      <div class="one">
+    <div class="row">
+
+      <div class="col-md-4">
+
+        <div class="card bg-primary mb-3" style="max-width: 18rem;">
+          <div class="card-header">EDU</div>
+          <p class="card-text">
+            SAVE UP TO 80% WHEN YOU SHOP E.D.U STORES AND SHIP TO UGANDA WITH A MY EDU PREMIUM MEMBERSHIP
+            <br>
+
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-md-4">
+        
+          <h4>
+
+            GET YOUR ITEM IN 2-4 DAYS*
+          </h4>
+          <div class="child1">
+            <button id="buttons" class="form-control">
+              <a href="oder.html">Order Item</a>
+            </button>
+
+            <button id="buttons" class="form-control" item-width="100px">
+              <a href="signup.html">Sign-Up </a>
+            </button>
+          </div>
+        
+      </div>
+      <div class="col-md-4">
+        <img src="images/shopping.jpg" alt="">
+        <!-- <button id="buttons" class="form-control" item-width="100px"> <a href="signup.html">Creat Account </a></button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="did">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <h3>How My EDU works with purchases from EDU retailers </h3>
+          <p> Shop with confidence that you’ll always receive your goods with these 3 simple steps</p>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-4">
+
+          <img src="images/bag.jpg" alt="">
+          <div class="star-2 stars"></div>
+        </div>
+        <div class="col-md-4">
+          <P>From Uganda</P>
+          <br>
+          <img src="images/flag.jpg" alt="">
+          <br>
+        </div>
+
+        <div class="col-md-4">
+          <p>To your convinient place</p>
+          <img src="images/fly.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h2>Latest News</h2>
+      <h5> Keep checking for latest updates about EDU from Outbox </h5>
+
+    </div>
+    <br>
+    <br>
+
+  </div>
+
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Value</div>
+
+          <h5 class="card-title">Value the quality</h5>
+          <p class="card-text">
+            It is all about the quality than quantity. Quality products stay with you longer and are always
+            <br> remembered than quantities which are numbers and often forgotten. Order your quality products[…]
+
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Offers</div>
+
+          <h5 class="card-title">uP TO 90% OFF!</h5>
+          <p class="card-text">
+            Shop on EDU and get to Enjoy discounts up to 90%.
+            <br> Shop Smartphones,Laptops,supplements,makeup,shoes,cars,funishures from the EDU online shop. Be our trusted customer
+            and enjoy the benefits of your worth
+
+          </p>
+        </div>
+
+      </div>
+
+
+      <div class="col-md-4">
+
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header">Value</div>
+
+          <h5 class="card-title">More</h5>
+          <p class="card-text">
+            you can always reach reach to us for better and quality
+            <br> products around Uganda,U.S.A, Canada among other countries
+
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="star-3 stars"></div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-12">
+        <h1>OUR PRODUCTS</h1>
+      </div>
+      <!-- <br><br><br> -->
+      <div class="col-md-3">
+        <div class="card">
+          <p>bags</p>
+
+          <img src="images/bag2.jpg" style="width:100%" alt="...">
+        </div>
+      </div>
+      <div class="col-md-3">
+
+
+        <div class="card">
+          <img src="images/shoes.jpg" style="width:100%" alt="...">
+
+          <p class="price">80,000/=</p>
+          <!-- <img src="jeans3.jpg" alt="Denim Jeans" >
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans..</p> -->
+          <p>
+            <button class="form-control">Add to Cart</button>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" ;>
+          <p class="price">100,000/=</p>
+
+          <img src="images/shoes2.jpg" style="width:100%" alt="...">
+          <p>
+            <button class="form-control">Add to Cart</button>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card" ;>
+          <p>600,000/=</p>
+
+          <img src="images/laptop1.jpg" style="width:100%" alt="...">
+          <p>
+            <button class="form-control">Add to Cart</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="card">
+        <p>just a click
+          <br> will order</p>
+
+        <img src="images/customer.jpg" style="width:100%" alt="...">
+        <p>
+          <button>Add to Cart</button>
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <p class="price">1000,000/=</p>
+
+        <img src="images/laptop2.jpg" style="width:100%" alt="...">
+        <p>
+          <button>Add to Cart</button>
+        </p>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <div class="card">
+        <p class="price">350,000/=</p>
+
+        <img src="images/phone.jpg" style="width:100%" alt="...">
+        <p>
+          <button class="form-control">Add to Cart</button>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <p class="price">35000/=</p>
+
+        <img src="images/watch.jpg" style="width:100%" alt="...">
+        <p>
+          <button class="form-control">Add to Cart</button>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <p class="price">50,000 to 150,000/=</p>
+
+        <img src="images/dresses.jpg" style="width:100%" alt="...">
+        <p>
+          <button class="form-control">Add to Cart</button>
+        </p>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="card">
+        <p>oder now and
+          <br> and get on your door</p>
+
+        <img src="images/cash.jpg" style="width:100%" alt="...">
+      </div>
+    </div>
+
+
+
+    <div class="col-md-3">
+      <div class="card">
+        <p>let's order now</p>
+
+        <img src="images/order.jpg" style="width:100%" alt="...">
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="card">
+        <p>there are more in stock</p>
+
+        <img src="images/men'sclothes.jpg" style="width:100%" alt="...">
+        <p>
+          <button class="form-control">Add to Cart</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- <br>
+  <br>
+  <br> -->
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col">
+        <button id="buttons" class="form-control" item-width="100px">
+          <a href="">Add Cart </a>
+        </button>
+        <button id="buttons" class="form-control" item-width="100px">
+          <a href="">Remove Cart</a>
+        </button>
+      </div>
+    </div>
+
+  </div> -->
+
+
+  <!-- <div class="container"> -->
+      <div class="footer">
+    <!-- <div class="row"> -->
+      
+      <div class="col-md-2">
+        <select>
+          <span type="select" class="">
+            <option value="date">Developers</option>
+            <option value="date">Gloria</option>
+            <option value="date">Mathew</option>
+            <option value="date">David</option>
+            <option value="date">Larry</option>
+            <option value="date">Jane</option>
+            <option value="date">Sandra</option>
+            <option value="date">Ronald</option>
+            <option value="date">and othes</option>
+          </span>
+        </select>
+        <p>&copy to
+          <br> chandimarygloria @gmail.com
+        </p>
+      </div>
+
+
+      <div class="col-md-2">
+        <p>Contuct us </p>
+        <p>&copy;edu.outbox.com</p>
+        <p>solise house</p>
+        <p>along Lumumba avenue</p>
+
+      </div>
+
+      <div class="col-md-2">
+        <p>our products are</p>
+        <p>at affordable prices</p>
+
+      </div>
+      <div class="col-md-2">
+        <p>our retailers are around</p>
+        <p>for quick delivery</p>
+      </div>
+      <div class="col-md-2">
+        <p> Hire connect to
+          <br> www.outbox.com
+        </p>
+      </div>
+      <div class="col-md-2">
+        <p>EDU your trusted online </p>
+        <p>
+          <i class="fas fa-info-circle"></i>retailer </p>
+        &copy;EDU 2020
+
+      </div>
+
+        </div>
+
+      </div>
+  </div>
+
+
+</body>
+
+</html>
