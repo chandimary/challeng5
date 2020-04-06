@@ -7,6 +7,7 @@
     <title>Log-In</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/script.js"></script>
 
 
 
@@ -22,9 +23,9 @@
               
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <!-- <li class="nav-item active">
                       <a class="nav-link" href="#">Shipping Prices <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                       <a class="nav-link" href="oder.html">Order Now</a>
                     </li>
@@ -33,29 +34,39 @@
                       <a class="nav-link" href="#" >Contact</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#" >About Us</a>
+                            <a class="nav-link" href="aboutus.html" >About Us</a>
                           </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
                     <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="revealMessage()">Search</button>
                   </form>
                 </div>
   
               </nav>
 
+              
+
 <div class="container">
     <div class="row">
+
+      <div class="col-md-4">
+
+          <h4>Welcome to Gaga</h4>
+          <hr>
+      </div>
+
         <div class="col-md-8">
 
-                <label for="">Username or Email </label>
-                      <input type="text" class="form-control name" placeholder="User Name....." required="required">
+                <label for=""> Email </label>
+                      <input type="text" id="Email" class="form-control name" placeholder="User Name..." required="required">
                     
                      <label for="">Password</label>
-                        <input type="text" class="form-control" placeholder="password....." required="required" >
+                        <input type="text" id="password" class="form-control" placeholder="password....." required="required" >
                        <br>
                       
-                  <a href="index.html"> <button class="form-control">Log-in</button> </a> 
+                  <a href="index.html"> <button class="form-control btn btn-dark" onclick="checkForm();">Log-in</button> </a> 
+                  <p>Dont have an account?<a href="signup.html" >Join</a> </p>
 
                     </div>
     </div>

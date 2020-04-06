@@ -16,7 +16,13 @@
  .footer {
    /* justify-content: space-around;*/
      display: flex; 
-   background-color: rgb(128, 118, 118);
+   background-color:black;
+   font-family: monospace;
+   font-size: 20px;
+   opacity: 0.6;
+   padding: 20px;
+   height: 300px;
+   color: white;
  }
 
  .child1 {
